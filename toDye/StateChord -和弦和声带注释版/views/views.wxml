@@ -1,0 +1,48 @@
+<view class="page">
+  <view class="page_bd">
+    <view class="body_head" bindtap="bdshowitem">>>和弦辨认</view>
+    <navigator url="../chords/chords?type=1">
+      <view class="{{open?'display_show':'display_none'}}">大三和弦 & 小三和弦-和声</view>
+    </navigator>
+    <navigator url="../chords/chords?type=2">
+      <view class="{{open?'display_show':'display_none'}}">大、小、增、减三和弦-和声</view>
+    </navigator>
+    <navigator url="../chords/chords?type=3">
+      <view class="{{open?'display_show':'display_none'}}">大七和弦 & 小七和弦-和声</view>
+    </navigator>
+    <navigator url="../chords/chords?type=4">
+      <view class="{{open?'display_show':'display_none'}}">小三和弦 & 减三和弦-和声</view>
+    </navigator>
+    <navigator url="../chords/chords?type=5">
+      <view class="{{open?'display_show':'display_none'}}">所有七和弦 -和声</view>
+    </navigator>
+        <navigator url="../chords/chords?type=10">
+      <view class="{{open?'display_show':'display_none'}}">挂留和弦 -和声</view>
+    </navigator>
+        <navigator url="../chords/chords?type=11">
+      <view class="{{open?'display_show':'display_none'}}">大、小三和弦和sus4 -和声</view>
+    </navigator>
+    <view class="body_head" bindtap="zwshowitem">>>和弦转位</view>
+    <navigator url="../chords/chords?type=6">
+      <view class="{{openZw?'display_show':'display_none'}}">大三和弦的转位-和声</view>
+    </navigator>
+    <navigator url="../chords/chords?type=7">
+      <view class="{{openZw?'display_show':'display_none'}}">小三和弦的转位-和声</view>
+    </navigator>
+    <navigator url="../chords/chords?type=8">
+      <view class="{{openZw?'display_show':'display_none'}}">大三和弦、小三和弦、增三和弦、减三和弦的转位-和声</view>
+    </navigator>
+    <navigator url="../chords/chords?type=9">
+      <view class="{{openZw?'display_show':'display_none'}}">所有七和弦的转位-和声</view>
+    </navigator>
+    <navigator url="../chords/chords?type=12">
+      <view class="{{openZw?'display_show':'display_none'}}">减三和弦的转位-和声</view>
+    </navigator>
+      <navigator url="../chords/chords?type=13">
+      <view class="{{openZw?'display_show':'display_none'}}">sus4和弦的转位-和声</view>
+    </navigator>
+      <navigator url="../chords/chords?type=14">
+      <view class="{{openZw?'display_show':'display_none'}}">小三和弦 & 减三和弦的转位-和声</view>
+    </navigator>
+  </view>
+</view>

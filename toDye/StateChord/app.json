@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "views/views",
+    "chords/chords"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTitleText": "和弦练习",
+    "navigationBarTextStyle": "black"
+  }
+}

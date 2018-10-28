@@ -1,0 +1,55 @@
+/**index.wxss**/
+
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5rpx;
+}
+
+#pos {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+#title {
+  /* color: #aaa; */
+  font-size: 40rpx;
+  margin-top: 50rpx;
+  text-align: center
+}
+
+.problembody {
+  /* margin-top: 200px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bt{
+  margin: 30rpx;
+  width: 200rpx;
+  height: 90rpx;
+  text-align: center; 
+}
+
+.btc{
+  margin: 30rpx;
+  width: 420rpx;
+  height: 90rpx;
+  text-align: center;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nextG{
+  width: 60%;
+  text-align: center
+}

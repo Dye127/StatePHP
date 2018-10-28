@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="head">
+    <text id="title">{{title}}</text>
+  </view>
+  <view class="problembody">
+    <button type="primary" class='bt' disabled="{{disabledLast}}" bindtap="lastGet">上一题</button>
+    <button type="primary" class='bt' disabled="{{disabledNext}}" bindtap="nextGet">下一题</button>
+  </view>
+  <view class="problembody">
+    <button type="primary" class='bt' bindtap="newGet" disabled="{{disabledNew}}">新题目</button>
+    <button type="primary" class='bt' bindtap="rePlay" disabled="{{disabledRe}}">重放</button>
+  </view>
+  <view wx:if="{{flag}}">
+    <view class="answer" wx:for="{{currentChordDetail}}" wx:key="" wx:for-index="key" wx:for-item="value">
+      <view wx:if="{{ans==value.id}}">
+        <button class='btc' bindtap="checkAnswer" disabled="true" data-groupid="{{value}}" data-id="{{key}}" type="primary">{{value.name}}</button>
+      </view>
+      <view wx:else>
+        <button class='btc' disabled="true" bindtap="checkAnswer" data-groupid="{{value}}" data-id="{{key}}" type="{{key==choose?'warn':'default'}}">{{value.name}}</button>
+      </view>
+    </view>
+  </view>
+  <view wx:else>
+    <view class="answer" wx:for="{{currentChordDetail}}" wx:key="" wx:for-index="key" wx:for-item="value">
+      <view wx:if="{{ans==value.id}}">
+        <button class='btc' bindtap="checkAnswer" data-groupid="{{value}}" data-id="{{key}}" type="primary">{{value.name}}</button>
+      </view>
+      <view wx:else>
+        <button class='btc' bindtap="checkAnswer" data-groupid="{{value}}" data-id="{{key}}" type="{{key==choose?'warn':'default'}}">{{value.name}}</button>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- mine -->
+<button class='nextG' hidden='{{NextGroup}}' bindtap='nextGroup'>下一组</button>

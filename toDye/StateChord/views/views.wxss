@@ -1,0 +1,37 @@
+/* views/views.wxss */
+.page_bd{
+  padding: 20rpx;
+  background-color: snow;
+}
+.body_head{ 
+  border: 2rpx solid;
+  border-color: beige;
+  padding: 20rpx;
+}
+
+.body_head::before{
+  width: 0rpx;
+  height: 0rpx;
+  border-bottom: 30rpx solid black; 
+  border-left: 30rpx solid transparent;  
+  content: ""; 
+  position: absolute;
+  margin-top:10rpx;
+  left: 35rpx;
+}
+.display_show{
+  display: block;
+  border: 2rpx solid;
+  border-color: beige;
+  padding: 20rpx;
+}
+
+.display_show::after{
+  content: ">"; 
+  position: absolute;
+  right: 30rpx;
+}
+
+.display_none{
+  display: none;
+}
